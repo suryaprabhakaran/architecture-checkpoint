@@ -13,6 +13,7 @@ const SERVICES = [
 const COMPANY = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
+  { label: "Use Cases", href: "/use-cases" },
   { label: "Methodology", href: "/#methodology" },
   { label: "Contact", href: "/contact" },
 ];

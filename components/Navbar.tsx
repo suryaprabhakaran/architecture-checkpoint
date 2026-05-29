@@ -7,6 +7,7 @@ import { CheckSquare, Menu, X } from "lucide-react";
 
 const NAV_LINKS = [
   { label: "Services", href: "/services" },
+  { label: "Use Cases", href: "/use-cases" },
   { label: "Methodology", href: "/#methodology" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
