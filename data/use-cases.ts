@@ -43,6 +43,7 @@ export const INDUSTRY_COLORS: Record<string, string> = {
   "Manufacturing":      "#F97316",
   "Technology":         "#06B6D4",
   "Medical":            "#10B981",
+  "Media & Entertainment": "#EC4899",
   "Energy & Utilities": "#84CC16",
 };
 
@@ -72,16 +73,16 @@ export const USE_CASES: UseCase[] = [
   },
   {
     id: "uc-2",
-    industry: "Healthcare",
-    serviceType: "AI & Modernisation",
-    title: "Add your use case title here",
+    industry: "Media & Entertainment",
+    serviceType: "Enterprise Architecture",
+    title: "Strategic Platform Assessment for Streaming Technology Consolidation in a Post-Acquisition Media Merger",
     challenge:
-      "Describe the architecture challenge the organisation was facing — the pain, the complexity, the constraints.",
+      "Following a strategic acquisition, a media company faced a high-stakes technology consolidation decision: standardise on their established homegrown streaming management platform, or migrate to the incumbent tool used by the acquired organisation. Both platforms carried significant commercial investment, institutional knowledge, and deeply embedded team culture. With each side advocating for their own tool and conflicting interests at the executive level, the organisation needed a rigorous, politically neutral assessment — one that could withstand scrutiny from both parties and provide a defensible basis for a board-level decision.",
     approach:
-      "Explain the architectural approach taken: frameworks used, key decisions made, patterns applied.",
+      "Designed and executed a structured strategic assessment using a strict Chinese wall methodology — each platform was evaluated in complete isolation, with no proprietary operational details shared between the two organisations during the process. A multi-dimensional assessment framework was applied consistently across both tools, covering: technical architecture and streaming scalability, development experience and toolchain maturity, security posture and compliance readiness, strategic market positioning and long-term vendor trajectory, agile delivery capability, and organisational and team culture fit. Each dimension was scored against a common rubric, with evidence gathered independently from each side before being consolidated into a unified comparative report.",
     outcome:
-      "Quantify the result — cost savings, speed improvements, risk reduction, capability unlocked.",
-    tags: ["Data Platform", "MLOps", "AI Governance"],
+      "Delivered a board-ready strategic assessment report providing clear, evidence-based recommendations for post-acquisition platform consolidation. The structured framework gave leadership a defensible, conflict-free basis for the technology decision — grounded in objective analysis rather than organisational politics. The assessment surfaced the homegrown platform's measurable strengths in streaming-specific optimisation, institutional depth, and strategic flexibility, while transparently quantifying the trade-offs of each path. Both parties accepted the findings as credible, enabling the consolidation programme to move forward with organisational alignment.",
+    tags: ["M&A", "Strategic Assessment", "Platform Evaluation", "Streaming Technology", "Chinese Wall", "Technology Consolidation"],
   },
   {
     id: "uc-3",
