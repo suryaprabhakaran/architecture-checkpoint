@@ -42,6 +42,7 @@ export const INDUSTRY_COLORS: Record<string, string> = {
   "Retail & Commerce":  "#F59E0B",
   "Manufacturing":      "#F97316",
   "Technology":         "#06B6D4",
+  "Medical":            "#10B981",
   "Energy & Utilities": "#84CC16",
 };
 
@@ -58,7 +59,7 @@ export const SERVICE_COLORS: Record<string, string> = {
 export const USE_CASES: UseCase[] = [
   {
     id: "uc-1",
-    industry: "Technology",
+    industry: "Medical",
     serviceType: "Solution Architecture",
     title: "Self-Updating Developer Documentation Portal Across a Multi-Technology Service Portfolio",
     challenge:
