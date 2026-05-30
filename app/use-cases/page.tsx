@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Building2, Layers, Cloud, Brain } from "lucide-react";
-import type { ReactNode } from "react";
 import CTASection from "@/components/CTASection";
+import {
+  USE_CASES,
+  INDUSTRY_COLORS,
+  SERVICE_COLORS,
+} from "@/data/use-cases";
 
 export const metadata: Metadata = {
   title: "Use Cases — Architecture Checkpoint",
@@ -10,81 +14,12 @@ export const metadata: Metadata = {
     "Real-world architecture challenges we have solved — from enterprise modernisation to AI adoption and cloud transformation.",
 };
 
-interface UseCase {
-  id: string;
-  industry: string;
-  industryColor: string;
-  serviceType: string;
-  serviceIcon: ReactNode;
-  title: string;
-  challenge: string;
-  approach: string;
-  outcome: string;
-  tags: string[];
-}
-
-const USE_CASES: UseCase[] = [
-  {
-    id: "uc-1",
-    industry: "Financial Services",
-    industryColor: "#3B82F6",
-    serviceType: "Enterprise Architecture",
-    serviceIcon: <Building2 size={16} />,
-    title: "Add your use case title here",
-    challenge:
-      "Describe the architecture challenge the organisation was facing — the pain, the complexity, the constraints.",
-    approach:
-      "Explain the architectural approach taken: frameworks used, key decisions made, patterns applied.",
-    outcome:
-      "Quantify the result — cost savings, speed improvements, risk reduction, capability unlocked.",
-    tags: ["TOGAF", "EA Governance", "Roadmap"],
-  },
-  {
-    id: "uc-2",
-    industry: "Healthcare",
-    industryColor: "#10B981",
-    serviceType: "AI & Modernisation",
-    serviceIcon: <Brain size={16} />,
-    title: "Add your use case title here",
-    challenge:
-      "Describe the architecture challenge the organisation was facing — the pain, the complexity, the constraints.",
-    approach:
-      "Explain the architectural approach taken: frameworks used, key decisions made, patterns applied.",
-    outcome:
-      "Quantify the result — cost savings, speed improvements, risk reduction, capability unlocked.",
-    tags: ["Data Platform", "MLOps", "AI Governance"],
-  },
-  {
-    id: "uc-3",
-    industry: "Retail & Commerce",
-    industryColor: "#F59E0B",
-    serviceType: "Cloud Architecture",
-    serviceIcon: <Cloud size={16} />,
-    title: "Add your use case title here",
-    challenge:
-      "Describe the architecture challenge the organisation was facing — the pain, the complexity, the constraints.",
-    approach:
-      "Explain the architectural approach taken: frameworks used, key decisions made, patterns applied.",
-    outcome:
-      "Quantify the result — cost savings, speed improvements, risk reduction, capability unlocked.",
-    tags: ["AWS", "Cloud Migration", "FinOps"],
-  },
-  {
-    id: "uc-4",
-    industry: "Public Sector",
-    industryColor: "#8B5CF6",
-    serviceType: "Solution Architecture",
-    serviceIcon: <Layers size={16} />,
-    title: "Add your use case title here",
-    challenge:
-      "Describe the architecture challenge the organisation was facing — the pain, the complexity, the constraints.",
-    approach:
-      "Explain the architectural approach taken: frameworks used, key decisions made, patterns applied.",
-    outcome:
-      "Quantify the result — cost savings, speed improvements, risk reduction, capability unlocked.",
-    tags: ["Microservices", "API Design", "Integration"],
-  },
-];
+const SERVICE_ICONS: Record<string, React.ReactNode> = {
+  "Enterprise Architecture": <Building2 size={14} />,
+  "Solution Architecture":   <Layers size={14} />,
+  "Cloud Architecture":      <Cloud size={14} />,
+  "AI & Modernisation":      <Brain size={14} />,
+};
 
 export default function UseCasesPage() {
   return (
@@ -136,13 +71,7 @@ export default function UseCasesPage() {
             Real Architecture,{" "}
             <span className="gradient-text">Real Results</span>
           </h1>
-          <p
-            style={{
-              color: "#64748B",
-              fontSize: 18,
-              lineHeight: 1.7,
-            }}
-          >
+          <p style={{ color: "#64748B", fontSize: 18, lineHeight: 1.7 }}>
             A collection of architecture challenges we have helped organisations
             solve — from enterprise modernisation and cloud transformation to
             AI adoption and governance.
@@ -162,173 +91,193 @@ export default function UseCasesPage() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fill, minmax(520px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fill, minmax(480px, 1fr))",
               gap: 28,
             }}
           >
-            {USE_CASES.map((uc) => (
-              <div
-                key={uc.id}
-                className="card"
-                style={{ padding: 36, display: "flex", flexDirection: "column", gap: 20 }}
-              >
-                {/* Header row */}
+            {USE_CASES.map((uc) => {
+              const industryColor =
+                INDUSTRY_COLORS[uc.industry] ?? "#3B82F6";
+              const serviceColor =
+                SERVICE_COLORS[uc.serviceType] ?? "#3B82F6";
+              const serviceIcon = SERVICE_ICONS[uc.serviceType];
+
+              return (
                 <div
+                  key={uc.id}
+                  className="card"
                   style={{
+                    padding: 36,
                     display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    flexWrap: "wrap",
-                    gap: 10,
+                    flexDirection: "column",
+                    gap: 20,
                   }}
                 >
-                  {/* Industry badge */}
-                  <span
+                  {/* Header row */}
+                  <div
                     style={{
-                      display: "inline-flex",
+                      display: "flex",
                       alignItems: "center",
-                      gap: 6,
-                      background: `${uc.industryColor}15`,
-                      border: `1px solid ${uc.industryColor}30`,
-                      color: uc.industryColor,
-                      padding: "5px 12px",
-                      borderRadius: 100,
-                      fontSize: 12,
-                      fontWeight: 600,
+                      justifyContent: "space-between",
+                      flexWrap: "wrap",
+                      gap: 10,
                     }}
                   >
-                    {uc.industry}
-                  </span>
-
-                  {/* Service type */}
-                  <span
-                    style={{
-                      display: "inline-flex",
-                      alignItems: "center",
-                      gap: 6,
-                      color: "#475569",
-                      fontSize: 12,
-                      fontWeight: 500,
-                    }}
-                  >
-                    {uc.serviceIcon}
-                    {uc.serviceType}
-                  </span>
-                </div>
-
-                {/* Title */}
-                <h3
-                  style={{
-                    color: "#F8FAFC",
-                    fontWeight: 700,
-                    fontSize: 20,
-                    letterSpacing: "-0.01em",
-                    lineHeight: 1.3,
-                  }}
-                >
-                  {uc.title}
-                </h3>
-
-                {/* Three sections */}
-                <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-                  {[
-                    { label: "Challenge", color: "#EF4444", text: uc.challenge },
-                    { label: "Approach", color: "#3B82F6", text: uc.approach },
-                    { label: "Outcome", color: "#10B981", text: uc.outcome },
-                  ].map((section) => (
-                    <div key={section.label}>
-                      <div
-                        style={{
-                          display: "flex",
-                          alignItems: "center",
-                          gap: 8,
-                          marginBottom: 6,
-                        }}
-                      >
-                        <span
-                          style={{
-                            width: 8,
-                            height: 8,
-                            borderRadius: "50%",
-                            background: section.color,
-                            flexShrink: 0,
-                          }}
-                        />
-                        <span
-                          style={{
-                            color: section.color,
-                            fontSize: 11,
-                            fontWeight: 700,
-                            letterSpacing: "0.08em",
-                            textTransform: "uppercase" as const,
-                          }}
-                        >
-                          {section.label}
-                        </span>
-                      </div>
-                      <p
-                        style={{
-                          color: "#64748B",
-                          fontSize: 14,
-                          lineHeight: 1.7,
-                          paddingLeft: 16,
-                        }}
-                      >
-                        {section.text}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-
-                {/* Tags */}
-                <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginTop: 4 }}>
-                  {uc.tags.map((tag) => (
                     <span
-                      key={tag}
                       style={{
-                        background: "rgba(255,255,255,0.04)",
-                        border: "1px solid rgba(255,255,255,0.08)",
-                        color: "#475569",
-                        padding: "4px 10px",
-                        borderRadius: 6,
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: 6,
+                        background: `${industryColor}15`,
+                        border: `1px solid ${industryColor}30`,
+                        color: industryColor,
+                        padding: "5px 12px",
+                        borderRadius: 100,
                         fontSize: 12,
-                        fontWeight: 500,
+                        fontWeight: 600,
                       }}
                     >
-                      {tag}
+                      {uc.industry}
                     </span>
-                  ))}
-                </div>
-              </div>
-            ))}
+                    <span
+                      style={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: 6,
+                        color: serviceColor,
+                        fontSize: 12,
+                        fontWeight: 500,
+                        opacity: 0.8,
+                      }}
+                    >
+                      {serviceIcon}
+                      {uc.serviceType}
+                    </span>
+                  </div>
 
-            {/* Add more placeholder */}
+                  {/* Title */}
+                  <h3
+                    style={{
+                      color: "#F8FAFC",
+                      fontWeight: 700,
+                      fontSize: 19,
+                      letterSpacing: "-0.01em",
+                      lineHeight: 1.3,
+                    }}
+                  >
+                    {uc.title}
+                  </h3>
+
+                  {/* Three labelled sections */}
+                  <div
+                    style={{ display: "flex", flexDirection: "column", gap: 14 }}
+                  >
+                    {[
+                      { label: "Challenge", color: "#EF4444", text: uc.challenge },
+                      { label: "Approach",  color: "#3B82F6", text: uc.approach },
+                      { label: "Outcome",   color: "#10B981", text: uc.outcome },
+                    ].map((s) => (
+                      <div key={s.label}>
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            gap: 8,
+                            marginBottom: 5,
+                          }}
+                        >
+                          <span
+                            style={{
+                              width: 7,
+                              height: 7,
+                              borderRadius: "50%",
+                              background: s.color,
+                              flexShrink: 0,
+                            }}
+                          />
+                          <span
+                            style={{
+                              color: s.color,
+                              fontSize: 11,
+                              fontWeight: 700,
+                              letterSpacing: "0.08em",
+                              textTransform: "uppercase" as const,
+                            }}
+                          >
+                            {s.label}
+                          </span>
+                        </div>
+                        <p
+                          style={{
+                            color: "#64748B",
+                            fontSize: 14,
+                            lineHeight: 1.7,
+                            paddingLeft: 15,
+                          }}
+                        >
+                          {s.text}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Tags */}
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: 8,
+                      flexWrap: "wrap",
+                      marginTop: 4,
+                    }}
+                  >
+                    {uc.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        style={{
+                          background: "rgba(255,255,255,0.04)",
+                          border: "1px solid rgba(255,255,255,0.08)",
+                          color: "#475569",
+                          padding: "4px 10px",
+                          borderRadius: 6,
+                          fontSize: 12,
+                          fontWeight: 500,
+                        }}
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+
+            {/* "Coming soon" placeholder */}
             <div
               style={{
-                border: "2px dashed rgba(255,255,255,0.08)",
+                border: "2px dashed rgba(255,255,255,0.07)",
                 borderRadius: 16,
                 padding: 36,
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
-                gap: 16,
-                minHeight: 300,
+                gap: 14,
+                minHeight: 280,
                 textAlign: "center",
               }}
             >
               <div
                 style={{
-                  width: 48,
-                  height: 48,
-                  borderRadius: 12,
+                  width: 44,
+                  height: 44,
+                  borderRadius: 11,
                   background: "rgba(59,130,246,0.08)",
                   border: "1px solid rgba(59,130,246,0.15)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
                   color: "#3B82F6",
-                  fontSize: 24,
+                  fontSize: 22,
                   fontWeight: 300,
                 }}
               >
@@ -338,21 +287,21 @@ export default function UseCasesPage() {
                 <p
                   style={{
                     color: "#475569",
-                    fontSize: 15,
+                    fontSize: 14,
                     fontWeight: 500,
-                    marginBottom: 6,
+                    marginBottom: 4,
                   }}
                 >
                   More use cases coming soon
                 </p>
                 <p style={{ color: "#334155", fontSize: 13 }}>
-                  Each engagement adds to our growing library of patterns
+                  Each engagement adds to our library of patterns
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Bottom note */}
+          {/* Bottom CTA strip */}
           <div
             style={{
               marginTop: 56,
