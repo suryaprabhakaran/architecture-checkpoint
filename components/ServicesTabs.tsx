@@ -152,12 +152,13 @@ export default function ServicesTabs() {
           display: "flex",
           gap: 8,
           flexWrap: "wrap",
-          marginBottom: 48,
+          justifyContent: "center",
           padding: "6px",
           background: "rgba(255,255,255,0.03)",
           border: "1px solid rgba(255,255,255,0.07)",
           borderRadius: 14,
           width: "fit-content",
+          margin: "0 auto 48px",
         }}
       >
         {SERVICES.map((s, i) => (
