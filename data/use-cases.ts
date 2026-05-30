@@ -61,14 +61,14 @@ export const USE_CASES: UseCase[] = [
     id: "uc-1",
     industry: "Medical",
     serviceType: "Solution Architecture",
-    title: "Self-Updating Developer Documentation Portal Across a Multi-Technology Service Portfolio",
+    title: "Unified Developer Documentation Portal with Polyglot Documentation Routing Across a Multi-Business-Unit Medical Technology Portfolio",
     challenge:
-      "Developers across multiple business units had no single place to discover and access up-to-date service documentation. Docs were fragmented across teams and tools — REST APIs, C++ services, MQTT brokers, and CLI tools each lived in different places, making it nearly impossible to find the latest specs without chasing individual teams.",
+      "A medical technology organisation operating across multiple autonomous business units faced a critical documentation fragmentation problem. Each business unit owned a heterogeneous mix of services — C++ embedded systems, REST microservices, MQTT-based event-driven components, and bespoke CLI tooling — each governed by different documentation standards and toolchains. There was no unified discovery layer, no taxonomy spanning organisational boundaries, and no mechanism to guarantee documentation currency. Developers spent significant time chasing teams for the latest specs, creating audit risk and slowing cross-team integration work.",
     approach:
-      "Designed a lightweight static portal (index.html) organised by business unit → application → service. Each service deep-links directly to its native documentation tool based on type: Swagger for REST APIs, AsyncAPI for MQTT services, Doxygen for C++ services, and auto-generated pages via custom Python scripts for CLI tools. The entire portal is hosted on GitHub Pages — no server, no deployment pipeline, no maintenance overhead.",
+      "Designed a documentation architecture built on a three-tier hierarchy — business unit → application → service — surfaced through a zero-dependency static portal. The core architectural decision was a documentation routing strategy: rather than centralising or copying documentation, each service entry resolves to its authoritative source in real time based on service type. REST APIs route to Swagger UI, event-driven MQTT services to AsyncAPI specifications, C++ components to Doxygen-generated references, and CLI tools to structured pages produced by purpose-built Python introspection scripts. This live-link model eliminates the synchronisation problem entirely. The portal itself is hosted on GitHub Pages, removing all infrastructure and operational overhead from the documentation lifecycle.",
     outcome:
-      "Developers across the portfolio now have a single entry point to always-current documentation. Because each service links directly to its generated report, the latest docs are surfaced automatically — no manual updates, no stale content, and zero deployment effort for the team.",
-    tags: ["Developer Portal", "Swagger", "AsyncAPI", "Doxygen", "GitHub Pages", "Python"],
+      "Delivered a single, always-current entry point across the entire service portfolio — spanning multiple business units, four documentation standards, and several technology stacks. Documentation drift was eliminated by design: because every link resolves to a generated report at source, the portal requires no manual maintenance. The architecture reduced developer time-to-documentation from hours to seconds, improved cross-team discoverability, and provided a compliant, auditable view of all services for governance and integration teams.",
+    tags: ["Developer Portal", "Swagger", "AsyncAPI", "Doxygen", "GitHub Pages", "Python", "Documentation Architecture"],
   },
   {
     id: "uc-2",
