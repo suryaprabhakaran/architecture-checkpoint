@@ -58,16 +58,16 @@ export const SERVICE_COLORS: Record<string, string> = {
 export const USE_CASES: UseCase[] = [
   {
     id: "uc-1",
-    industry: "Financial Services",
-    serviceType: "Enterprise Architecture",
-    title: "Add your use case title here",
+    industry: "Technology",
+    serviceType: "Solution Architecture",
+    title: "Self-Updating Developer Documentation Portal Across a Multi-Technology Service Portfolio",
     challenge:
-      "Describe the architecture challenge the organisation was facing — the pain, the complexity, the constraints.",
+      "Developers across multiple business units had no single place to discover and access up-to-date service documentation. Docs were fragmented across teams and tools — REST APIs, C++ services, MQTT brokers, and CLI tools each lived in different places, making it nearly impossible to find the latest specs without chasing individual teams.",
     approach:
-      "Explain the architectural approach taken: frameworks used, key decisions made, patterns applied.",
+      "Designed a lightweight static portal (index.html) organised by business unit → application → service. Each service deep-links directly to its native documentation tool based on type: Swagger for REST APIs, AsyncAPI for MQTT services, Doxygen for C++ services, and auto-generated pages via custom Python scripts for CLI tools. The entire portal is hosted on GitHub Pages — no server, no deployment pipeline, no maintenance overhead.",
     outcome:
-      "Quantify the result — cost savings, speed improvements, risk reduction, capability unlocked.",
-    tags: ["TOGAF", "EA Governance", "Roadmap"],
+      "Developers across the portfolio now have a single entry point to always-current documentation. Because each service links directly to its generated report, the latest docs are surfaced automatically — no manual updates, no stale content, and zero deployment effort for the team.",
+    tags: ["Developer Portal", "Swagger", "AsyncAPI", "Doxygen", "GitHub Pages", "Python"],
   },
   {
     id: "uc-2",
