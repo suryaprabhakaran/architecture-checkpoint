@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Building2, Layers, Cloud, Brain } from "lucide-react";
 import CTASection from "@/components/CTASection";
+import UseCaseDiagram from "@/components/UseCaseDiagram";
 import {
   USE_CASES,
   INDUSTRY_COLORS,
@@ -167,6 +168,11 @@ export default function UseCasesPage() {
                   >
                     {uc.title}
                   </h3>
+
+                  {/* Diagram */}
+                  {uc.diagramType && (
+                    <UseCaseDiagram type={uc.diagramType} />
+                  )}
 
                   {/* Three labelled sections */}
                   <div
