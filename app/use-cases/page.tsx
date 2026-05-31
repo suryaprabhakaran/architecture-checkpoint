@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowRight, Building2, Layers, Cloud, Brain } from "lucide-react";
 import CTASection from "@/components/CTASection";
 import UseCaseDiagram from "@/components/UseCaseDiagram";
@@ -173,13 +172,11 @@ export default function UseCasesPage() {
                   {/* Diagram — PNG if available, CSS fallback otherwise */}
                   {uc.imageUrl ? (
                     <div style={{ borderRadius: 10, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)" }}>
-                      <Image
-                        src={uc.imageUrl}
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${uc.imageUrl}`}
                         alt={`Architecture diagram — ${uc.title}`}
-                        width={880}
-                        height={450}
                         style={{ width: "100%", height: "auto", display: "block" }}
-                        unoptimized
                       />
                     </div>
                   ) : uc.diagramType ? (
