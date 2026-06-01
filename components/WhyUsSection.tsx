@@ -53,7 +53,7 @@ export default function WhyUsSection() {
               fontSize: "clamp(28px, 4vw, 48px)",
               fontWeight: 800,
               letterSpacing: "-0.03em",
-              color: "#F8FAFC",
+              color: "#0F172A",
               lineHeight: 1.15,
               marginBottom: 16,
             }}
@@ -63,7 +63,7 @@ export default function WhyUsSection() {
           </h2>
           <p
             style={{
-              color: "#64748B",
+              color: "#94A3B8",
               fontSize: 17,
               maxWidth: 520,
               margin: "0 auto",
@@ -107,7 +107,7 @@ export default function WhyUsSection() {
               </div>
               <h3
                 style={{
-                  color: "#F8FAFC",
+                  color: "#0F172A",
                   fontWeight: 700,
                   fontSize: 18,
                   letterSpacing: "-0.01em",
@@ -118,7 +118,7 @@ export default function WhyUsSection() {
               </h3>
               <p
                 style={{
-                  color: "#64748B",
+                  color: "#94A3B8",
                   fontSize: 14,
                   lineHeight: 1.75,
                 }}
@@ -133,8 +133,8 @@ export default function WhyUsSection() {
         <div
           style={{
             marginTop: 64,
-            background: "rgba(59,130,246,0.05)",
-            border: "1px solid rgba(59,130,246,0.15)",
+            background: "rgba(37,99,235,0.06)",
+            border: "1px solid rgba(37,99,235,0.12)",
             borderRadius: 16,
             padding: "40px 48px",
             textAlign: "center",
@@ -142,7 +142,7 @@ export default function WhyUsSection() {
         >
           <p
             style={{
-              color: "#CBD5E1",
+              color: "#94A3B8",
               fontSize: "clamp(16px, 2vw, 20px)",
               fontStyle: "italic",
               lineHeight: 1.7,

@@ -32,7 +32,7 @@ export default function ServicesPage() {
             width: "70%",
             height: "80%",
             background:
-              "radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.15) 0%, transparent 70%)",
+              "radial-gradient(ellipse at 50% 0%, rgba(37,99,235,0.12) 0%, transparent 70%)",
             pointerEvents: "none",
           }}
         />
@@ -50,7 +50,7 @@ export default function ServicesPage() {
               fontSize: "clamp(32px, 5vw, 60px)",
               fontWeight: 800,
               letterSpacing: "-0.03em",
-              color: "#F8FAFC",
+              color: "#0F172A",
               lineHeight: 1.1,
               marginBottom: 20,
             }}
@@ -60,7 +60,7 @@ export default function ServicesPage() {
           </h1>
           <p
             style={{
-              color: "#64748B",
+              color: "#94A3B8",
               fontSize: 18,
               lineHeight: 1.7,
               maxWidth: 600,
@@ -77,8 +77,8 @@ export default function ServicesPage() {
       {/* Tabbed service details */}
       <section
         style={{
-          background: "#0C1525",
-          borderTop: "1px solid rgba(255,255,255,0.06)",
+          background: "#EFF4FB",
+          borderTop: "1px solid rgba(0,0,0,0.06)",
           paddingTop: 56,
         }}
       >

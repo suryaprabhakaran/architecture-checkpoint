@@ -90,7 +90,7 @@ export default function AboutPage() {
             width: "70%",
             height: "80%",
             background:
-              "radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.15) 0%, transparent 70%)",
+              "radial-gradient(ellipse at 50% 0%, rgba(37,99,235,0.12) 0%, transparent 70%)",
             pointerEvents: "none",
           }}
         />
@@ -108,7 +108,7 @@ export default function AboutPage() {
               fontSize: "clamp(32px, 5vw, 60px)",
               fontWeight: 800,
               letterSpacing: "-0.03em",
-              color: "#F8FAFC",
+              color: "#0F172A",
               lineHeight: 1.1,
               marginBottom: 20,
             }}
@@ -118,7 +118,7 @@ export default function AboutPage() {
           </h1>
           <p
             style={{
-              color: "#64748B",
+              color: "#94A3B8",
               fontSize: 18,
               lineHeight: 1.7,
             }}
@@ -134,8 +134,8 @@ export default function AboutPage() {
       <section
         style={{
           padding: "80px 24px",
-          background: "#0C1525",
-          borderTop: "1px solid rgba(255,255,255,0.06)",
+          background: "#EFF4FB",
+          borderTop: "1px solid rgba(0,0,0,0.06)",
         }}
       >
         <div
@@ -155,7 +155,7 @@ export default function AboutPage() {
                 fontSize: "clamp(24px, 3vw, 40px)",
                 fontWeight: 800,
                 letterSpacing: "-0.02em",
-                color: "#F8FAFC",
+                color: "#0F172A",
                 lineHeight: 1.2,
                 marginBottom: 20,
               }}
@@ -164,7 +164,7 @@ export default function AboutPage() {
             </h2>
             <p
               style={{
-                color: "#64748B",
+                color: "#94A3B8",
                 fontSize: 15,
                 lineHeight: 1.8,
                 marginBottom: 16,
@@ -176,7 +176,7 @@ export default function AboutPage() {
             </p>
             <p
               style={{
-                color: "#64748B",
+                color: "#94A3B8",
                 fontSize: 15,
                 lineHeight: 1.8,
                 marginBottom: 32,
@@ -216,8 +216,8 @@ export default function AboutPage() {
                   display: "flex",
                   alignItems: "center",
                   gap: 20,
-                  background: "#111D33",
-                  border: "1px solid rgba(255,255,255,0.07)",
+                  background: "#FFFFFF",
+                  border: "1px solid rgba(0,0,0,0.07)",
                   borderRadius: 14,
                   padding: "20px 24px",
                 }}
@@ -253,7 +253,7 @@ export default function AboutPage() {
                 fontSize: "clamp(24px, 3vw, 40px)",
                 fontWeight: 800,
                 letterSpacing: "-0.02em",
-                color: "#F8FAFC",
+                color: "#0F172A",
                 lineHeight: 1.2,
               }}
             >
@@ -287,7 +287,7 @@ export default function AboutPage() {
                 </div>
                 <h3
                   style={{
-                    color: "#F8FAFC",
+                    color: "#0F172A",
                     fontWeight: 700,
                     fontSize: 17,
                     marginBottom: 10,
@@ -295,7 +295,7 @@ export default function AboutPage() {
                 >
                   {v.title}
                 </h3>
-                <p style={{ color: "#64748B", fontSize: 14, lineHeight: 1.7 }}>
+                <p style={{ color: "#94A3B8", fontSize: 14, lineHeight: 1.7 }}>
                   {v.description}
                 </p>
               </div>
@@ -308,9 +308,9 @@ export default function AboutPage() {
       <section
         style={{
           padding: "80px 24px",
-          background: "#0C1525",
-          borderTop: "1px solid rgba(255,255,255,0.06)",
-          borderBottom: "1px solid rgba(255,255,255,0.06)",
+          background: "#EFF4FB",
+          borderTop: "1px solid rgba(0,0,0,0.06)",
+          borderBottom: "1px solid rgba(0,0,0,0.06)",
         }}
       >
         <div style={{ maxWidth: 1200, margin: "0 auto", textAlign: "center" }}>
@@ -320,7 +320,7 @@ export default function AboutPage() {
               fontSize: "clamp(24px, 3vw, 40px)",
               fontWeight: 800,
               letterSpacing: "-0.02em",
-              color: "#F8FAFC",
+              color: "#0F172A",
               marginBottom: 16,
             }}
           >
@@ -328,7 +328,7 @@ export default function AboutPage() {
           </h2>
           <p
             style={{
-              color: "#64748B",
+              color: "#94A3B8",
               fontSize: 16,
               marginBottom: 48,
               maxWidth: 520,
@@ -350,8 +350,8 @@ export default function AboutPage() {
               <span
                 key={industry}
                 style={{
-                  background: "rgba(255,255,255,0.04)",
-                  border: "1px solid rgba(255,255,255,0.08)",
+                  background: "rgba(0,0,0,0.04)",
+                  border: "1px solid rgba(0,0,0,0.08)",
                   color: "#94A3B8",
                   padding: "10px 20px",
                   borderRadius: 100,
@@ -381,7 +381,7 @@ export default function AboutPage() {
               fontSize: "clamp(24px, 3vw, 40px)",
               fontWeight: 800,
               letterSpacing: "-0.02em",
-              color: "#F8FAFC",
+              color: "#0F172A",
               marginBottom: 16,
             }}
           >
@@ -389,7 +389,7 @@ export default function AboutPage() {
           </h2>
           <p
             style={{
-              color: "#64748B",
+              color: "#94A3B8",
               fontSize: 16,
               marginBottom: 48,
             }}
@@ -409,11 +409,11 @@ export default function AboutPage() {
                   }}
                 >
                   <span
-                    style={{ color: "#CBD5E1", fontSize: 14, fontWeight: 500 }}
+                    style={{ color: "#94A3B8", fontSize: 14, fontWeight: 500 }}
                   >
                     {cap.label}
                   </span>
-                  <span style={{ color: "#475569", fontSize: 13 }}>
+                  <span style={{ color: "#94A3B8", fontSize: 13 }}>
                     {cap.level}%
                   </span>
                 </div>
@@ -421,7 +421,7 @@ export default function AboutPage() {
                   style={{
                     height: 6,
                     borderRadius: 100,
-                    background: "rgba(255,255,255,0.06)",
+                    background: "rgba(0,0,0,0.06)",
                     overflow: "hidden",
                   }}
                 >

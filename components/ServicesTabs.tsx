@@ -154,8 +154,8 @@ export default function ServicesTabs() {
           flexWrap: "wrap",
           justifyContent: "center",
           padding: "6px",
-          background: "rgba(255,255,255,0.03)",
-          border: "1px solid rgba(255,255,255,0.07)",
+          background: "rgba(0,0,0,0.03)",
+          border: "1px solid rgba(0,0,0,0.07)",
           borderRadius: 14,
           width: "fit-content",
           margin: "0 auto 48px",
@@ -171,7 +171,7 @@ export default function ServicesTabs() {
               border: "none",
               background:
                 active === i ? `${s.accentColor}20` : "transparent",
-              color: active === i ? s.accentColor : "#64748B",
+              color: active === i ? s.accentColor : "#94A3B8",
               fontWeight: 600,
               fontSize: 14,
               cursor: "pointer",
@@ -235,7 +235,7 @@ export default function ServicesTabs() {
               fontSize: "clamp(22px, 3vw, 36px)",
               fontWeight: 800,
               letterSpacing: "-0.02em",
-              color: "#F8FAFC",
+              color: "#0F172A",
               lineHeight: 1.15,
               marginBottom: 8,
             }}
@@ -257,7 +257,7 @@ export default function ServicesTabs() {
             <p
               key={i}
               style={{
-                color: "#64748B",
+                color: "#94A3B8",
                 fontSize: 15,
                 lineHeight: 1.8,
                 marginBottom: 14,
@@ -294,7 +294,7 @@ export default function ServicesTabs() {
           <div className="card" style={{ padding: 28 }}>
             <h3
               style={{
-                color: "#F8FAFC",
+                color: "#0F172A",
                 fontWeight: 700,
                 fontSize: 13,
                 letterSpacing: "0.06em",
@@ -337,7 +337,7 @@ export default function ServicesTabs() {
           >
             <h3
               style={{
-                color: "#F8FAFC",
+                color: "#0F172A",
                 fontWeight: 700,
                 fontSize: 13,
                 letterSpacing: "0.06em",
@@ -370,7 +370,7 @@ export default function ServicesTabs() {
                   />
                   <span
                     style={{
-                      color: "#CBD5E1",
+                      color: "#94A3B8",
                       fontSize: 14,
                       lineHeight: 1.6,
                     }}

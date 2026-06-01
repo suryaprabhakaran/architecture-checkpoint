@@ -19,7 +19,7 @@ const SERVICES: Service[] = [
   {
     icon: <Building2 size={24} />,
     iconBg: "linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%)",
-    iconGlow: "rgba(59,130,246,0.2)",
+    iconGlow: "rgba(37,99,235,0.16)",
     tag: "Foundation",
     title: "Enterprise Architecture",
     subtitle: "Align Strategy with Technology",
@@ -94,7 +94,7 @@ export default function ServicesSection() {
               fontSize: "clamp(28px, 4vw, 48px)",
               fontWeight: 800,
               letterSpacing: "-0.03em",
-              color: "#F8FAFC",
+              color: "#0F172A",
               lineHeight: 1.15,
               marginBottom: 16,
             }}
@@ -104,7 +104,7 @@ export default function ServicesSection() {
           </h2>
           <p
             style={{
-              color: "#64748B",
+              color: "#94A3B8",
               fontSize: 17,
               maxWidth: 560,
               margin: "0 auto",
@@ -155,7 +155,7 @@ export default function ServicesSection() {
                   fontWeight: 700,
                   letterSpacing: "0.1em",
                   textTransform: "uppercase",
-                  color: "#475569",
+                  color: "#94A3B8",
                   marginBottom: 8,
                 }}
               >
@@ -165,7 +165,7 @@ export default function ServicesSection() {
               {/* Title */}
               <h3
                 style={{
-                  color: "#F8FAFC",
+                  color: "#0F172A",
                   fontWeight: 700,
                   fontSize: 20,
                   letterSpacing: "-0.01em",
@@ -178,7 +178,7 @@ export default function ServicesSection() {
               {/* Subtitle */}
               <p
                 style={{
-                  color: "#60A5FA",
+                  color: "#2563EB",
                   fontSize: 13,
                   fontWeight: 500,
                   marginBottom: 16,
@@ -190,7 +190,7 @@ export default function ServicesSection() {
               {/* Description */}
               <p
                 style={{
-                  color: "#64748B",
+                  color: "#94A3B8",
                   fontSize: 14,
                   lineHeight: 1.7,
                   marginBottom: 24,
@@ -234,7 +234,7 @@ export default function ServicesSection() {
                   display: "flex",
                   alignItems: "center",
                   gap: 6,
-                  color: "#60A5FA",
+                  color: "#2563EB",
                   textDecoration: "none",
                   fontSize: 14,
                   fontWeight: 600,

@@ -25,9 +25,9 @@ export default function StatsSection() {
   return (
     <section
       style={{
-        background: "#0C1525",
-        borderTop: "1px solid rgba(255,255,255,0.06)",
-        borderBottom: "1px solid rgba(255,255,255,0.06)",
+        background: "#EFF4FB",
+        borderTop: "1px solid rgba(0,0,0,0.06)",
+        borderBottom: "1px solid rgba(0,0,0,0.06)",
         padding: "64px 24px",
       }}
     >
@@ -60,7 +60,7 @@ export default function StatsSection() {
             </div>
             <div
               style={{
-                color: "#CBD5E1",
+                color: "#94A3B8",
                 fontWeight: 600,
                 fontSize: 15,
                 marginBottom: 6,
@@ -68,7 +68,7 @@ export default function StatsSection() {
             >
               {stat.label}
             </div>
-            <div style={{ color: "#475569", fontSize: 13, lineHeight: 1.5 }}>
+            <div style={{ color: "#94A3B8", fontSize: 13, lineHeight: 1.5 }}>
               {stat.description}
             </div>
           </div>

@@ -18,7 +18,7 @@ const box = (
       borderRadius: 7,
       fontSize: 11,
       fontWeight: 600,
-      background: accent ? `${accent}18` : "rgba(255,255,255,0.05)",
+      background: accent ? `${accent}18` : "rgba(0,0,0,0.05)",
       border: `1px solid ${accent ? `${accent}35` : "rgba(255,255,255,0.1)"}`,
       color: accent ?? "#94A3B8",
       whiteSpace: "nowrap" as const,
@@ -32,7 +32,7 @@ const box = (
 const arrow = (dir: "right" | "down" = "right") => (
   <span
     style={{
-      color: "#334155",
+      color: "#CBD5E1",
       fontSize: dir === "right" ? 14 : 12,
       lineHeight: 1,
       flexShrink: 0,
@@ -66,7 +66,7 @@ function PortalRoutingDiagram() {
     <div
       style={{
         background: "rgba(7,13,26,0.6)",
-        border: "1px solid rgba(255,255,255,0.07)",
+        border: "1px solid rgba(0,0,0,0.07)",
         borderRadius: 12,
         padding: "18px 20px",
         display: "flex",
@@ -97,7 +97,7 @@ function PortalRoutingDiagram() {
         <div
           style={{
             fontSize: 10,
-            color: "#334155",
+            color: "#CBD5E1",
             fontWeight: 600,
             letterSpacing: "0.08em",
             textTransform: "uppercase",
@@ -123,7 +123,7 @@ function PortalRoutingDiagram() {
           style={{
             flex: 1,
             height: 1,
-            background: "rgba(255,255,255,0.06)",
+            background: "rgba(0,0,0,0.06)",
           }}
         />
         {box("Always-current documentation at source", "#10B981", {
@@ -134,7 +134,7 @@ function PortalRoutingDiagram() {
           style={{
             flex: 1,
             height: 1,
-            background: "rgba(255,255,255,0.06)",
+            background: "rgba(0,0,0,0.06)",
           }}
         />
       </div>
@@ -157,7 +157,7 @@ function SplitAssessmentDiagram() {
     <div
       style={{
         background: "rgba(7,13,26,0.6)",
-        border: "1px solid rgba(255,255,255,0.07)",
+        border: "1px solid rgba(0,0,0,0.07)",
         borderRadius: 12,
         padding: "18px 20px",
         display: "flex",
@@ -170,15 +170,15 @@ function SplitAssessmentDiagram() {
         <div
           style={{
             background: "rgba(59,130,246,0.08)",
-            border: "1px solid rgba(59,130,246,0.2)",
+            border: "1px solid rgba(37,99,235,0.16)",
             borderRadius: 9,
             padding: "10px 14px",
           }}
         >
-          <div style={{ fontSize: 10, color: "#475569", fontWeight: 600, marginBottom: 4 }}>
+          <div style={{ fontSize: 10, color: "#94A3B8", fontWeight: 600, marginBottom: 4 }}>
             ACQUIRER
           </div>
-          <div style={{ fontSize: 12, color: "#93C5FD", fontWeight: 700 }}>
+          <div style={{ fontSize: 12, color: "#1D4ED8", fontWeight: 700 }}>
             Homegrown Platform
           </div>
         </div>
@@ -231,7 +231,7 @@ function SplitAssessmentDiagram() {
             padding: "10px 14px",
           }}
         >
-          <div style={{ fontSize: 10, color: "#475569", fontWeight: 600, marginBottom: 4 }}>
+          <div style={{ fontSize: 10, color: "#94A3B8", fontWeight: 600, marginBottom: 4 }}>
             ACQUIRED
           </div>
           <div style={{ fontSize: 12, color: "#C4B5FD", fontWeight: 700 }}>
@@ -241,14 +241,14 @@ function SplitAssessmentDiagram() {
       </div>
 
       {/* Converging arrow */}
-      <div style={{ textAlign: "center", color: "#334155", fontSize: 12 }}>↓ Independent evaluations merged ↓</div>
+      <div style={{ textAlign: "center", color: "#CBD5E1", fontSize: 12 }}>↓ Independent evaluations merged ↓</div>
 
       {/* Assessment dimensions */}
       <div>
         <div
           style={{
             fontSize: 10,
-            color: "#334155",
+            color: "#CBD5E1",
             fontWeight: 600,
             letterSpacing: "0.08em",
             textTransform: "uppercase",
@@ -264,9 +264,9 @@ function SplitAssessmentDiagram() {
 
       {/* Output */}
       <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-        <div style={{ flex: 1, height: 1, background: "rgba(255,255,255,0.06)" }} />
+        <div style={{ flex: 1, height: 1, background: "rgba(0,0,0,0.06)" }} />
         {box("Board-ready Recommendation", "#10B981", { fontSize: 10, padding: "4px 10px" })}
-        <div style={{ flex: 1, height: 1, background: "rgba(255,255,255,0.06)" }} />
+        <div style={{ flex: 1, height: 1, background: "rgba(0,0,0,0.06)" }} />
       </div>
     </div>
   );

@@ -58,9 +58,9 @@ export default function MethodologySection() {
       id="methodology"
       style={{
         padding: "96px 24px",
-        background: "#0C1525",
-        borderTop: "1px solid rgba(255,255,255,0.06)",
-        borderBottom: "1px solid rgba(255,255,255,0.06)",
+        background: "#EFF4FB",
+        borderTop: "1px solid rgba(0,0,0,0.06)",
+        borderBottom: "1px solid rgba(0,0,0,0.06)",
       }}
     >
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
@@ -72,7 +72,7 @@ export default function MethodologySection() {
               fontSize: "clamp(28px, 4vw, 48px)",
               fontWeight: 800,
               letterSpacing: "-0.03em",
-              color: "#F8FAFC",
+              color: "#0F172A",
               lineHeight: 1.15,
               marginBottom: 16,
             }}
@@ -82,7 +82,7 @@ export default function MethodologySection() {
           </h2>
           <p
             style={{
-              color: "#64748B",
+              color: "#94A3B8",
               fontSize: 17,
               maxWidth: 560,
               margin: "0 auto",
@@ -138,7 +138,7 @@ export default function MethodologySection() {
                       width: 1,
                       height: 40,
                       background:
-                        "linear-gradient(to bottom, rgba(255,255,255,0.08), transparent)",
+                        "linear-gradient(to bottom, rgba(0,0,0,0.08), transparent)",
                       marginTop: 8,
                     }}
                   />
@@ -157,7 +157,7 @@ export default function MethodologySection() {
                 >
                   <span
                     style={{
-                      color: "#334155",
+                      color: "#CBD5E1",
                       fontWeight: 700,
                       fontSize: 12,
                       letterSpacing: "0.1em",
@@ -167,7 +167,7 @@ export default function MethodologySection() {
                   </span>
                   <h3
                     style={{
-                      color: "#F8FAFC",
+                      color: "#0F172A",
                       fontWeight: 700,
                       fontSize: 20,
                       letterSpacing: "-0.01em",
@@ -178,7 +178,7 @@ export default function MethodologySection() {
                 </div>
                 <p
                   style={{
-                    color: "#64748B",
+                    color: "#94A3B8",
                     fontSize: 15,
                     lineHeight: 1.7,
                     maxWidth: 640,

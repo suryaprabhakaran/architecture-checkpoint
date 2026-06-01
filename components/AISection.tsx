@@ -18,9 +18,9 @@ export default function AISection() {
         overflow: "hidden",
         padding: "96px 24px",
         background:
-          "linear-gradient(135deg, #0C1525 0%, #070D1A 50%, #0A1420 100%)",
-        borderTop: "1px solid rgba(255,255,255,0.06)",
-        borderBottom: "1px solid rgba(255,255,255,0.06)",
+          "linear-gradient(135deg, #EFF4FB 0%, #F8FAFC 50%, #EFF4FB 100%)",
+        borderTop: "1px solid rgba(0,0,0,0.06)",
+        borderBottom: "1px solid rgba(0,0,0,0.06)",
       }}
     >
       {/* Background glow */}
@@ -32,7 +32,7 @@ export default function AISection() {
           width: 600,
           height: 600,
           background:
-            "radial-gradient(ellipse, rgba(245,158,11,0.08) 0%, transparent 70%)",
+            "radial-gradient(ellipse, rgba(217,119,6,0.08) 0%, transparent 70%)",
           pointerEvents: "none",
         }}
       />
@@ -73,7 +73,7 @@ export default function AISection() {
               fontWeight: 800,
               letterSpacing: "-0.03em",
               lineHeight: 1.15,
-              color: "#F8FAFC",
+              color: "#0F172A",
               marginBottom: 20,
             }}
           >
@@ -83,7 +83,7 @@ export default function AISection() {
 
           <p
             style={{
-              color: "#64748B",
+              color: "#94A3B8",
               fontSize: 16,
               lineHeight: 1.8,
               marginBottom: 16,
@@ -96,7 +96,7 @@ export default function AISection() {
           </p>
           <p
             style={{
-              color: "#64748B",
+              color: "#94A3B8",
               fontSize: 16,
               lineHeight: 1.8,
               marginBottom: 36,
@@ -147,11 +147,11 @@ export default function AISection() {
             </div>
             <div>
               <div
-                style={{ color: "#F8FAFC", fontWeight: 700, fontSize: 16 }}
+                style={{ color: "#0F172A", fontWeight: 700, fontSize: 16 }}
               >
                 AI Architecture Capabilities
               </div>
-              <div style={{ color: "#64748B", fontSize: 13 }}>
+              <div style={{ color: "#94A3B8", fontSize: 13 }}>
                 End-to-end AI adoption support
               </div>
             </div>
@@ -167,7 +167,7 @@ export default function AISection() {
                   gap: 12,
                   paddingBottom: 16,
                   marginBottom: 16,
-                  borderBottom: "1px solid rgba(255,255,255,0.05)",
+                  borderBottom: "1px solid rgba(0,0,0,0.05)",
                 }}
               >
                 <CheckCircle2
@@ -175,7 +175,7 @@ export default function AISection() {
                   color="#F59E0B"
                   style={{ flexShrink: 0, marginTop: 2 }}
                 />
-                <span style={{ color: "#CBD5E1", fontSize: 14, lineHeight: 1.5 }}>
+                <span style={{ color: "#94A3B8", fontSize: 14, lineHeight: 1.5 }}>
                   {cap}
                 </span>
               </li>
@@ -199,7 +199,7 @@ export default function AISection() {
               <div
                 key={s.value}
                 style={{
-                  background: "rgba(245,158,11,0.06)",
+                  background: "rgba(217,119,6,0.06)",
                   border: "1px solid rgba(245,158,11,0.12)",
                   borderRadius: 10,
                   padding: "14px 16px",
@@ -216,7 +216,7 @@ export default function AISection() {
                 >
                   {s.value}
                 </div>
-                <div style={{ color: "#64748B", fontSize: 12, marginTop: 2 }}>
+                <div style={{ color: "#94A3B8", fontSize: 12, marginTop: 2 }}>
                   {s.label}
                 </div>
               </div>

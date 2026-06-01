@@ -48,7 +48,7 @@ export default function ContactPage() {
             width: "60%",
             height: "80%",
             background:
-              "radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.15) 0%, transparent 70%)",
+              "radial-gradient(ellipse at 50% 0%, rgba(37,99,235,0.12) 0%, transparent 70%)",
             pointerEvents: "none",
           }}
         />
@@ -66,7 +66,7 @@ export default function ContactPage() {
               fontSize: "clamp(32px, 5vw, 56px)",
               fontWeight: 800,
               letterSpacing: "-0.03em",
-              color: "#F8FAFC",
+              color: "#0F172A",
               lineHeight: 1.1,
               marginBottom: 20,
             }}
@@ -74,7 +74,7 @@ export default function ContactPage() {
             Let&apos;s Start Your{" "}
             <span className="gradient-text">Architecture Checkpoint</span>
           </h1>
-          <p style={{ color: "#64748B", fontSize: 17, lineHeight: 1.7 }}>
+          <p style={{ color: "#94A3B8", fontSize: 17, lineHeight: 1.7 }}>
             Tell us about your transformation challenge. We&apos;ll come back
             to you within one business day with an initial view and next steps.
           </p>
@@ -85,8 +85,8 @@ export default function ContactPage() {
       <section
         style={{
           padding: "64px 24px 96px",
-          background: "#0C1525",
-          borderTop: "1px solid rgba(255,255,255,0.06)",
+          background: "#EFF4FB",
+          borderTop: "1px solid rgba(0,0,0,0.06)",
         }}
       >
         <div
@@ -102,8 +102,8 @@ export default function ContactPage() {
           {/* Contact form */}
           <div
             style={{
-              background: "#111D33",
-              border: "1px solid rgba(255,255,255,0.07)",
+              background: "#FFFFFF",
+              border: "1px solid rgba(0,0,0,0.07)",
               borderRadius: 20,
               padding: 40,
             }}
@@ -127,7 +127,7 @@ export default function ContactPage() {
                 </div>
                 <h3
                   style={{
-                    color: "#F8FAFC",
+                    color: "#0F172A",
                     fontWeight: 700,
                     fontSize: 22,
                     marginBottom: 12,
@@ -137,7 +137,7 @@ export default function ContactPage() {
                 </h3>
                 <p
                   style={{
-                    color: "#64748B",
+                    color: "#94A3B8",
                     fontSize: 15,
                     lineHeight: 1.7,
                     maxWidth: 320,
@@ -152,7 +152,7 @@ export default function ContactPage() {
               <form onSubmit={handleSubmit}>
                 <h2
                   style={{
-                    color: "#F8FAFC",
+                    color: "#0F172A",
                     fontWeight: 700,
                     fontSize: 22,
                     marginBottom: 8,
@@ -160,7 +160,7 @@ export default function ContactPage() {
                 >
                   Book a Free Checkpoint
                 </h2>
-                <p style={{ color: "#475569", fontSize: 14, marginBottom: 32 }}>
+                <p style={{ color: "#94A3B8", fontSize: 14, marginBottom: 32 }}>
                   No obligation. We&apos;ll assess your situation and give you
                   clear, practical guidance.
                 </p>
@@ -268,7 +268,7 @@ export default function ContactPage() {
 
                 <p
                   style={{
-                    color: "#334155",
+                    color: "#CBD5E1",
                     fontSize: 12,
                     textAlign: "center",
                     marginTop: 16,
@@ -285,7 +285,7 @@ export default function ContactPage() {
             <div>
               <h2
                 style={{
-                  color: "#F8FAFC",
+                  color: "#0F172A",
                   fontWeight: 700,
                   fontSize: 24,
                   marginBottom: 16,
@@ -294,7 +294,7 @@ export default function ContactPage() {
               >
                 Get in touch directly
               </h2>
-              <p style={{ color: "#64748B", fontSize: 15, lineHeight: 1.7 }}>
+              <p style={{ color: "#94A3B8", fontSize: 15, lineHeight: 1.7 }}>
                 Whether you have a specific project in mind or want an informal
                 chat about your architecture challenges, we are here to help.
               </p>
@@ -327,8 +327,8 @@ export default function ContactPage() {
                     display: "flex",
                     alignItems: "flex-start",
                     gap: 16,
-                    background: "#111D33",
-                    border: "1px solid rgba(255,255,255,0.07)",
+                    background: "#FFFFFF",
+                    border: "1px solid rgba(0,0,0,0.07)",
                     borderRadius: 14,
                     padding: "18px 20px",
                   }}
@@ -352,7 +352,7 @@ export default function ContactPage() {
                   <div>
                     <div
                       style={{
-                        color: "#475569",
+                        color: "#94A3B8",
                         fontSize: 12,
                         fontWeight: 600,
                         letterSpacing: "0.06em",
@@ -362,7 +362,7 @@ export default function ContactPage() {
                     >
                       {item.label}
                     </div>
-                    <div style={{ color: "#CBD5E1", fontSize: 14 }}>
+                    <div style={{ color: "#94A3B8", fontSize: 14 }}>
                       {item.value}
                     </div>
                   </div>
@@ -373,7 +373,7 @@ export default function ContactPage() {
             {/* What to expect */}
             <div
               style={{
-                background: "rgba(59,130,246,0.05)",
+                background: "rgba(37,99,235,0.06)",
                 border: "1px solid rgba(59,130,246,0.12)",
                 borderRadius: 16,
                 padding: 24,
@@ -381,7 +381,7 @@ export default function ContactPage() {
             >
               <h3
                 style={{
-                  color: "#F8FAFC",
+                  color: "#0F172A",
                   fontWeight: 700,
                   fontSize: 15,
                   marginBottom: 16,
@@ -409,12 +409,12 @@ export default function ContactPage() {
                       width: 22,
                       height: 22,
                       borderRadius: "50%",
-                      background: "rgba(59,130,246,0.15)",
+                      background: "rgba(37,99,235,0.12)",
                       border: "1px solid rgba(59,130,246,0.25)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
-                      color: "#60A5FA",
+                      color: "#2563EB",
                       fontSize: 11,
                       fontWeight: 700,
                       flexShrink: 0,
@@ -422,7 +422,7 @@ export default function ContactPage() {
                   >
                     {i + 1}
                   </span>
-                  <span style={{ color: "#64748B", fontSize: 13, lineHeight: 1.6 }}>
+                  <span style={{ color: "#94A3B8", fontSize: 13, lineHeight: 1.6 }}>
                     {step}
                   </span>
                 </div>
@@ -437,7 +437,7 @@ export default function ContactPage() {
 
 const labelStyle: React.CSSProperties = {
   display: "block",
-  color: "#64748B",
+  color: "#94A3B8",
   fontSize: 13,
   fontWeight: 500,
   marginBottom: 8,
@@ -445,11 +445,11 @@ const labelStyle: React.CSSProperties = {
 
 const inputStyle: React.CSSProperties = {
   width: "100%",
-  background: "#0C1525",
-  border: "1px solid rgba(255,255,255,0.08)",
+  background: "#EFF4FB",
+  border: "1px solid rgba(0,0,0,0.08)",
   borderRadius: 10,
   padding: "12px 14px",
-  color: "#F8FAFC",
+  color: "#0F172A",
   fontSize: 14,
   outline: "none",
   transition: "border-color 0.2s",

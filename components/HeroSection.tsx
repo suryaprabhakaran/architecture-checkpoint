@@ -28,7 +28,7 @@ export default function HeroSection() {
           width: "80%",
           height: "60%",
           background:
-            "radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.18) 0%, transparent 70%)",
+            "radial-gradient(ellipse at 50% 0%, rgba(37,99,235,0.14) 0%, transparent 70%)",
           pointerEvents: "none",
         }}
       />
@@ -42,7 +42,7 @@ export default function HeroSection() {
           width: 400,
           height: 400,
           background:
-            "radial-gradient(ellipse, rgba(245,158,11,0.06) 0%, transparent 70%)",
+            "radial-gradient(ellipse, rgba(217,119,6,0.06) 0%, transparent 70%)",
           pointerEvents: "none",
         }}
       />
@@ -71,7 +71,7 @@ export default function HeroSection() {
             fontWeight: 800,
             lineHeight: 1.1,
             letterSpacing: "-0.03em",
-            color: "#F8FAFC",
+            color: "#0F172A",
             marginBottom: 8,
           }}
         >
@@ -141,11 +141,11 @@ export default function HeroSection() {
                 display: "inline-flex",
                 alignItems: "center",
                 gap: 8,
-                background: "rgba(255,255,255,0.04)",
-                border: "1px solid rgba(255,255,255,0.09)",
+                background: "rgba(0,0,0,0.04)",
+                border: "1px solid rgba(0,0,0,0.08)",
                 padding: "8px 16px",
                 borderRadius: 100,
-                color: "#64748B",
+                color: "#94A3B8",
                 fontSize: 13,
                 fontWeight: 500,
               }}

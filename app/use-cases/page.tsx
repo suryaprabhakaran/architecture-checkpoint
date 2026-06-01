@@ -46,7 +46,7 @@ export default function UseCasesPage() {
             width: "70%",
             height: "80%",
             background:
-              "radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.15) 0%, transparent 70%)",
+              "radial-gradient(ellipse at 50% 0%, rgba(37,99,235,0.12) 0%, transparent 70%)",
             pointerEvents: "none",
           }}
         />
@@ -64,7 +64,7 @@ export default function UseCasesPage() {
               fontSize: "clamp(32px, 5vw, 60px)",
               fontWeight: 800,
               letterSpacing: "-0.03em",
-              color: "#F8FAFC",
+              color: "#0F172A",
               lineHeight: 1.1,
               marginBottom: 20,
             }}
@@ -72,7 +72,7 @@ export default function UseCasesPage() {
             Real Architecture,{" "}
             <span className="gradient-text">Real Results</span>
           </h1>
-          <p style={{ color: "#64748B", fontSize: 18, lineHeight: 1.7 }}>
+          <p style={{ color: "#94A3B8", fontSize: 18, lineHeight: 1.7 }}>
             A collection of architecture challenges we have helped organisations
             solve — from enterprise modernisation and cloud transformation to
             AI adoption and governance.
@@ -84,8 +84,8 @@ export default function UseCasesPage() {
       <section
         style={{
           padding: "80px 24px 96px",
-          background: "#0C1525",
-          borderTop: "1px solid rgba(255,255,255,0.06)",
+          background: "#EFF4FB",
+          borderTop: "1px solid rgba(0,0,0,0.06)",
         }}
       >
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
@@ -159,7 +159,7 @@ export default function UseCasesPage() {
                   {/* Title */}
                   <h3
                     style={{
-                      color: "#F8FAFC",
+                      color: "#0F172A",
                       fontWeight: 700,
                       fontSize: 19,
                       letterSpacing: "-0.01em",
@@ -171,7 +171,7 @@ export default function UseCasesPage() {
 
                   {/* Diagram — PNG if available, CSS fallback otherwise */}
                   {uc.imageUrl ? (
-                    <div style={{ borderRadius: 10, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)" }}>
+                    <div style={{ borderRadius: 10, overflow: "hidden", border: "1px solid rgba(0,0,0,0.07)" }}>
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${uc.imageUrl}`}
@@ -224,7 +224,7 @@ export default function UseCasesPage() {
                         </div>
                         <p
                           style={{
-                            color: "#64748B",
+                            color: "#94A3B8",
                             fontSize: 14,
                             lineHeight: 1.7,
                             paddingLeft: 15,
@@ -249,9 +249,9 @@ export default function UseCasesPage() {
                       <span
                         key={tag}
                         style={{
-                          background: "rgba(255,255,255,0.04)",
-                          border: "1px solid rgba(255,255,255,0.08)",
-                          color: "#475569",
+                          background: "rgba(0,0,0,0.04)",
+                          border: "1px solid rgba(0,0,0,0.08)",
+                          color: "#94A3B8",
                           padding: "4px 10px",
                           borderRadius: 6,
                           fontSize: 12,
@@ -269,7 +269,7 @@ export default function UseCasesPage() {
             {/* "Coming soon" placeholder */}
             <div
               style={{
-                border: "2px dashed rgba(255,255,255,0.07)",
+                border: "2px dashed rgba(0,0,0,0.07)",
                 borderRadius: 16,
                 padding: 36,
                 display: "flex",
@@ -287,7 +287,7 @@ export default function UseCasesPage() {
                   height: 44,
                   borderRadius: 11,
                   background: "rgba(59,130,246,0.08)",
-                  border: "1px solid rgba(59,130,246,0.15)",
+                  border: "1px solid rgba(37,99,235,0.12)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -301,7 +301,7 @@ export default function UseCasesPage() {
               <div>
                 <p
                   style={{
-                    color: "#475569",
+                    color: "#94A3B8",
                     fontSize: 14,
                     fontWeight: 500,
                     marginBottom: 4,
@@ -309,7 +309,7 @@ export default function UseCasesPage() {
                 >
                   More use cases coming soon
                 </p>
-                <p style={{ color: "#334155", fontSize: 13 }}>
+                <p style={{ color: "#CBD5E1", fontSize: 13 }}>
                   Each engagement adds to our library of patterns
                 </p>
               </div>
@@ -320,8 +320,8 @@ export default function UseCasesPage() {
           <div
             style={{
               marginTop: 56,
-              background: "rgba(59,130,246,0.04)",
-              border: "1px solid rgba(59,130,246,0.1)",
+              background: "rgba(37,99,235,0.05)",
+              border: "1px solid rgba(37,99,235,0.08)",
               borderRadius: 14,
               padding: "24px 32px",
               display: "flex",
@@ -334,7 +334,7 @@ export default function UseCasesPage() {
             <div>
               <p
                 style={{
-                  color: "#CBD5E1",
+                  color: "#94A3B8",
                   fontWeight: 600,
                   fontSize: 15,
                   marginBottom: 4,
@@ -342,7 +342,7 @@ export default function UseCasesPage() {
               >
                 Working on a similar challenge?
               </p>
-              <p style={{ color: "#475569", fontSize: 14 }}>
+              <p style={{ color: "#94A3B8", fontSize: 14 }}>
                 Every use case above started with a 30-minute discovery call.
               </p>
             </div>

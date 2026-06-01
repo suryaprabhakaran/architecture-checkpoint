@@ -35,9 +35,9 @@ export default function Navbar() {
         left: 0,
         right: 0,
         zIndex: 100,
-        background: scrolled ? "rgba(7,13,26,0.94)" : "transparent",
+        background: scrolled ? "rgba(255,255,255,0.96)" : "transparent",
         backdropFilter: scrolled ? "blur(16px)" : "none",
-        borderBottom: scrolled ? "1px solid rgba(255,255,255,0.07)" : "none",
+        borderBottom: scrolled ? "1px solid rgba(0,0,0,0.07)" : "none",
         transition: "all 0.3s ease",
       }}
     >
@@ -80,7 +80,7 @@ export default function Navbar() {
           <div style={{ lineHeight: 1.2 }}>
             <div
               style={{
-                color: "#F8FAFC",
+                color: "#0F172A",
                 fontWeight: 700,
                 fontSize: 15,
                 letterSpacing: "-0.02em",
@@ -90,7 +90,7 @@ export default function Navbar() {
             </div>
             <div
               style={{
-                color: "#60A5FA",
+                color: "#2563EB",
                 fontWeight: 700,
                 fontSize: 15,
                 letterSpacing: "-0.02em",
@@ -111,7 +111,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               style={{
-                color: isActive(link.href) ? "#F8FAFC" : "#94A3B8",
+                color: isActive(link.href) ? "#0F172A" : "#94A3B8",
                 textDecoration: "none",
                 fontSize: 14,
                 fontWeight: 500,
@@ -120,11 +120,11 @@ export default function Navbar() {
                 transition: "color 0.2s",
               }}
               onMouseEnter={(e) =>
-                (e.currentTarget.style.color = "#F8FAFC")
+                (e.currentTarget.style.color = "#0F172A")
               }
               onMouseLeave={(e) =>
                 (e.currentTarget.style.color = isActive(link.href)
-                  ? "#F8FAFC"
+                  ? "#0F172A"
                   : "#94A3B8")
               }
             >
@@ -182,9 +182,9 @@ export default function Navbar() {
       {open && (
         <div
           style={{
-            background: "rgba(7,13,26,0.98)",
+            background: "rgba(255,255,255,0.98)",
             backdropFilter: "blur(16px)",
-            borderTop: "1px solid rgba(255,255,255,0.07)",
+            borderTop: "1px solid rgba(0,0,0,0.07)",
             padding: "16px 24px 28px",
           }}
         >
@@ -195,12 +195,12 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
               style={{
                 display: "block",
-                color: isActive(link.href) ? "#F8FAFC" : "#CBD5E1",
+                color: isActive(link.href) ? "#0F172A" : "#94A3B8",
                 textDecoration: "none",
                 fontSize: 16,
                 fontWeight: 500,
                 padding: "14px 0",
-                borderBottom: "1px solid rgba(255,255,255,0.05)",
+                borderBottom: "1px solid rgba(0,0,0,0.05)",
               }}
             >
               {link.label}

@@ -22,8 +22,8 @@ export default function Footer() {
   return (
     <footer
       style={{
-        background: "#050B16",
-        borderTop: "1px solid rgba(255,255,255,0.06)",
+        background: "#EFF4FB",
+        borderTop: "1px solid rgba(0,0,0,0.06)",
         marginTop: "auto",
       }}
     >
@@ -72,7 +72,7 @@ export default function Footer() {
               <div style={{ lineHeight: 1.2 }}>
                 <div
                   style={{
-                    color: "#F8FAFC",
+                    color: "#0F172A",
                     fontWeight: 700,
                     fontSize: 14,
                     letterSpacing: "-0.02em",
@@ -82,7 +82,7 @@ export default function Footer() {
                 </div>
                 <div
                   style={{
-                    color: "#60A5FA",
+                    color: "#2563EB",
                     fontWeight: 700,
                     fontSize: 14,
                     letterSpacing: "-0.02em",
@@ -94,7 +94,7 @@ export default function Footer() {
             </Link>
             <p
               style={{
-                color: "#64748B",
+                color: "#94A3B8",
                 fontSize: 14,
                 lineHeight: 1.7,
                 marginBottom: 24,
@@ -117,23 +117,23 @@ export default function Footer() {
                     width: 36,
                     height: 36,
                     borderRadius: 8,
-                    background: "rgba(255,255,255,0.05)",
-                    border: "1px solid rgba(255,255,255,0.08)",
+                    background: "rgba(0,0,0,0.05)",
+                    border: "1px solid rgba(0,0,0,0.08)",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    color: "#64748B",
+                    color: "#94A3B8",
                     textDecoration: "none",
                     transition: "background 0.2s, color 0.2s",
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.background = "rgba(59,130,246,0.15)";
-                    e.currentTarget.style.color = "#60A5FA";
+                    e.currentTarget.style.background = "rgba(37,99,235,0.12)";
+                    e.currentTarget.style.color = "#2563EB";
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.background =
-                      "rgba(255,255,255,0.05)";
-                    e.currentTarget.style.color = "#64748B";
+                      "rgba(0,0,0,0.05)";
+                    e.currentTarget.style.color = "#94A3B8";
                   }}
                 >
                   {social.icon}
@@ -146,7 +146,7 @@ export default function Footer() {
           <div>
             <h4
               style={{
-                color: "#F8FAFC",
+                color: "#0F172A",
                 fontWeight: 600,
                 fontSize: 14,
                 marginBottom: 20,
@@ -162,7 +162,7 @@ export default function Footer() {
                   <Link
                     href="/services"
                     style={{
-                      color: "#64748B",
+                      color: "#94A3B8",
                       textDecoration: "none",
                       fontSize: 14,
                       transition: "color 0.2s",
@@ -174,7 +174,7 @@ export default function Footer() {
                       (e.currentTarget.style.color = "#94A3B8")
                     }
                     onMouseLeave={(e) =>
-                      (e.currentTarget.style.color = "#64748B")
+                      (e.currentTarget.style.color = "#94A3B8")
                     }
                   >
                     <ArrowRight size={12} />
@@ -189,7 +189,7 @@ export default function Footer() {
           <div>
             <h4
               style={{
-                color: "#F8FAFC",
+                color: "#0F172A",
                 fontWeight: 600,
                 fontSize: 14,
                 marginBottom: 20,
@@ -205,7 +205,7 @@ export default function Footer() {
                   <Link
                     href={link.href}
                     style={{
-                      color: "#64748B",
+                      color: "#94A3B8",
                       textDecoration: "none",
                       fontSize: 14,
                       transition: "color 0.2s",
@@ -217,7 +217,7 @@ export default function Footer() {
                       (e.currentTarget.style.color = "#94A3B8")
                     }
                     onMouseLeave={(e) =>
-                      (e.currentTarget.style.color = "#64748B")
+                      (e.currentTarget.style.color = "#94A3B8")
                     }
                   >
                     <ArrowRight size={12} />
@@ -232,7 +232,7 @@ export default function Footer() {
           <div>
             <h4
               style={{
-                color: "#F8FAFC",
+                color: "#0F172A",
                 fontWeight: 600,
                 fontSize: 14,
                 marginBottom: 20,
@@ -242,7 +242,7 @@ export default function Footer() {
             >
               Get in Touch
             </h4>
-            <p style={{ color: "#64748B", fontSize: 14, marginBottom: 16 }}>
+            <p style={{ color: "#94A3B8", fontSize: 14, marginBottom: 16 }}>
               Ready to architect your transformation?
             </p>
             <Link
@@ -251,9 +251,9 @@ export default function Footer() {
                 display: "inline-flex",
                 alignItems: "center",
                 gap: 8,
-                background: "rgba(59,130,246,0.1)",
+                background: "rgba(37,99,235,0.08)",
                 border: "1px solid rgba(59,130,246,0.25)",
-                color: "#60A5FA",
+                color: "#2563EB",
                 padding: "10px 18px",
                 borderRadius: 8,
                 fontSize: 14,
@@ -262,10 +262,10 @@ export default function Footer() {
                 transition: "background 0.2s",
               }}
               onMouseEnter={(e) =>
-                (e.currentTarget.style.background = "rgba(59,130,246,0.2)")
+                (e.currentTarget.style.background = "rgba(37,99,235,0.16)")
               }
               onMouseLeave={(e) =>
-                (e.currentTarget.style.background = "rgba(59,130,246,0.1)")
+                (e.currentTarget.style.background = "rgba(37,99,235,0.08)")
               }
             >
               Book a Free Checkpoint
@@ -277,7 +277,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div
           style={{
-            borderTop: "1px solid rgba(255,255,255,0.06)",
+            borderTop: "1px solid rgba(0,0,0,0.06)",
             paddingTop: 28,
             display: "flex",
             flexWrap: "wrap",
@@ -286,7 +286,7 @@ export default function Footer() {
             alignItems: "center",
           }}
         >
-          <p style={{ color: "#334155", fontSize: 13 }}>
+          <p style={{ color: "#CBD5E1", fontSize: 13 }}>
             © {new Date().getFullYear()} Architecture Checkpoint. All rights
             reserved.
           </p>
@@ -296,16 +296,16 @@ export default function Footer() {
                 key={item}
                 href="#"
                 style={{
-                  color: "#334155",
+                  color: "#CBD5E1",
                   fontSize: 13,
                   textDecoration: "none",
                   transition: "color 0.2s",
                 }}
                 onMouseEnter={(e) =>
-                  (e.currentTarget.style.color = "#64748B")
+                  (e.currentTarget.style.color = "#94A3B8")
                 }
                 onMouseLeave={(e) =>
-                  (e.currentTarget.style.color = "#334155")
+                  (e.currentTarget.style.color = "#CBD5E1")
                 }
               >
                 {item}

@@ -7,8 +7,8 @@ export default function CTASection() {
       style={{
         padding: "96px 24px",
         background:
-          "linear-gradient(135deg, #0C1525 0%, #0A1428 50%, #070D1A 100%)",
-        borderTop: "1px solid rgba(255,255,255,0.06)",
+          "linear-gradient(135deg, #EFF4FB 0%, #F8FAFC 50%, #EFF4FB 100%)",
+        borderTop: "1px solid rgba(0,0,0,0.06)",
         position: "relative",
         overflow: "hidden",
       }}
@@ -23,7 +23,7 @@ export default function CTASection() {
           width: "70%",
           height: "100%",
           background:
-            "radial-gradient(ellipse, rgba(59,130,246,0.1) 0%, transparent 65%)",
+            "radial-gradient(ellipse, rgba(37,99,235,0.08) 0%, transparent 65%)",
           pointerEvents: "none",
         }}
       />
@@ -41,9 +41,9 @@ export default function CTASection() {
             display: "inline-flex",
             alignItems: "center",
             gap: 8,
-            background: "rgba(59,130,246,0.1)",
-            border: "1px solid rgba(59,130,246,0.2)",
-            color: "#60A5FA",
+            background: "rgba(37,99,235,0.08)",
+            border: "1px solid rgba(37,99,235,0.16)",
+            color: "#2563EB",
             padding: "6px 16px",
             borderRadius: 100,
             fontSize: 13,
@@ -62,7 +62,7 @@ export default function CTASection() {
             fontSize: "clamp(28px, 5vw, 56px)",
             fontWeight: 800,
             letterSpacing: "-0.03em",
-            color: "#F8FAFC",
+            color: "#0F172A",
             lineHeight: 1.1,
             marginBottom: 20,
           }}
@@ -74,7 +74,7 @@ export default function CTASection() {
 
         <p
           style={{
-            color: "#64748B",
+            color: "#94A3B8",
             fontSize: 18,
             lineHeight: 1.7,
             marginBottom: 48,
@@ -125,7 +125,7 @@ export default function CTASection() {
                 display: "flex",
                 alignItems: "center",
                 gap: 8,
-                color: "#475569",
+                color: "#94A3B8",
                 fontSize: 13,
               }}
             >
