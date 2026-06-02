@@ -18,9 +18,9 @@ const box = (
       borderRadius: 7,
       fontSize: 11,
       fontWeight: 600,
-      background: accent ? `${accent}18` : "rgba(0,0,0,0.05)",
-      border: `1px solid ${accent ? `${accent}35` : "rgba(255,255,255,0.1)"}`,
-      color: accent ?? "#94A3B8",
+      background: accent ? `${accent}12` : "rgba(0,0,0,0.04)",
+      border: `1px solid ${accent ? `${accent}30` : "rgba(0,0,0,0.1)"}`,
+      color: accent ?? "#64748B",
       whiteSpace: "nowrap" as const,
       ...extra,
     }}
@@ -65,8 +65,8 @@ function PortalRoutingDiagram() {
   return (
     <div
       style={{
-        background: "rgba(7,13,26,0.6)",
-        border: "1px solid rgba(0,0,0,0.07)",
+        background: "#F8FAFC",
+        border: "1px solid rgba(0,0,0,0.08)",
         borderRadius: 12,
         padding: "18px 20px",
         display: "flex",
@@ -77,11 +77,11 @@ function PortalRoutingDiagram() {
       {/* Tier 1: hierarchy */}
       {row(
         <>
-          {box("Business Unit", "#3B82F6")}
+          {box("Business Unit", "#2563EB")}
           {arrow()}
-          {box("Application", "#8B5CF6")}
+          {box("Application", "#7C3AED")}
           {arrow()}
-          {box("Service", "#06B6D4")}
+          {box("Service", "#0891B2")}
         </>
       )}
 
@@ -97,7 +97,7 @@ function PortalRoutingDiagram() {
         <div
           style={{
             fontSize: 10,
-            color: "#CBD5E1",
+            color: "#94A3B8",
             fontWeight: 600,
             letterSpacing: "0.08em",
             textTransform: "uppercase",
@@ -108,10 +108,10 @@ function PortalRoutingDiagram() {
         </div>
         {row(
           <>
-            {box("Swagger", "#10B981")}
-            {box("AsyncAPI", "#F59E0B")}
-            {box("Doxygen", "#3B82F6")}
-            {box("Python CLI", "#8B5CF6")}
+            {box("Swagger", "#059669")}
+            {box("AsyncAPI", "#D97706")}
+            {box("Doxygen", "#2563EB")}
+            {box("Python CLI", "#7C3AED")}
           </>,
           { gap: 8 }
         )}
@@ -119,24 +119,12 @@ function PortalRoutingDiagram() {
 
       {/* result */}
       <div style={{ display: "flex", alignItems: "center", gap: 8, marginTop: 2 }}>
-        <div
-          style={{
-            flex: 1,
-            height: 1,
-            background: "rgba(0,0,0,0.06)",
-          }}
-        />
-        {box("Always-current documentation at source", "#10B981", {
+        <div style={{ flex: 1, height: 1, background: "rgba(0,0,0,0.08)" }} />
+        {box("Always-current documentation at source", "#059669", {
           fontSize: 10,
           padding: "4px 10px",
         })}
-        <div
-          style={{
-            flex: 1,
-            height: 1,
-            background: "rgba(0,0,0,0.06)",
-          }}
-        />
+        <div style={{ flex: 1, height: 1, background: "rgba(0,0,0,0.08)" }} />
       </div>
     </div>
   );
@@ -156,8 +144,8 @@ function SplitAssessmentDiagram() {
   return (
     <div
       style={{
-        background: "rgba(7,13,26,0.6)",
-        border: "1px solid rgba(0,0,0,0.07)",
+        background: "#F8FAFC",
+        border: "1px solid rgba(0,0,0,0.08)",
         borderRadius: 12,
         padding: "18px 20px",
         display: "flex",
@@ -169,8 +157,8 @@ function SplitAssessmentDiagram() {
       <div style={{ display: "grid", gridTemplateColumns: "1fr auto 1fr", gap: 8, alignItems: "center" }}>
         <div
           style={{
-            background: "rgba(59,130,246,0.08)",
-            border: "1px solid rgba(37,99,235,0.16)",
+            background: "rgba(37,99,235,0.06)",
+            border: "1px solid rgba(37,99,235,0.18)",
             borderRadius: 9,
             padding: "10px 14px",
           }}
@@ -197,17 +185,16 @@ function SplitAssessmentDiagram() {
               width: 2,
               height: 48,
               background:
-                "repeating-linear-gradient(to bottom, #F59E0B 0px, #F59E0B 6px, transparent 6px, transparent 12px)",
+                "repeating-linear-gradient(to bottom, #D97706 0px, #D97706 6px, transparent 6px, transparent 12px)",
             }}
           />
           <span
             style={{
               fontSize: 9,
-              color: "#F59E0B",
+              color: "#D97706",
               fontWeight: 700,
               letterSpacing: "0.06em",
               textTransform: "uppercase",
-              transform: "rotate(0deg)",
               whiteSpace: "nowrap",
             }}
           >
@@ -218,15 +205,15 @@ function SplitAssessmentDiagram() {
               width: 2,
               height: 48,
               background:
-                "repeating-linear-gradient(to bottom, #F59E0B 0px, #F59E0B 6px, transparent 6px, transparent 12px)",
+                "repeating-linear-gradient(to bottom, #D97706 0px, #D97706 6px, transparent 6px, transparent 12px)",
             }}
           />
         </div>
 
         <div
           style={{
-            background: "rgba(139,92,246,0.08)",
-            border: "1px solid rgba(139,92,246,0.2)",
+            background: "rgba(124,58,237,0.06)",
+            border: "1px solid rgba(124,58,237,0.18)",
             borderRadius: 9,
             padding: "10px 14px",
           }}
@@ -234,21 +221,23 @@ function SplitAssessmentDiagram() {
           <div style={{ fontSize: 10, color: "#94A3B8", fontWeight: 600, marginBottom: 4 }}>
             ACQUIRED
           </div>
-          <div style={{ fontSize: 12, color: "#C4B5FD", fontWeight: 700 }}>
+          <div style={{ fontSize: 12, color: "#6D28D9", fontWeight: 700 }}>
             Incumbent Tool
           </div>
         </div>
       </div>
 
       {/* Converging arrow */}
-      <div style={{ textAlign: "center", color: "#CBD5E1", fontSize: 12 }}>↓ Independent evaluations merged ↓</div>
+      <div style={{ textAlign: "center", color: "#94A3B8", fontSize: 12 }}>
+        ↓ Independent evaluations merged ↓
+      </div>
 
       {/* Assessment dimensions */}
       <div>
         <div
           style={{
             fontSize: 10,
-            color: "#CBD5E1",
+            color: "#94A3B8",
             fontWeight: 600,
             letterSpacing: "0.08em",
             textTransform: "uppercase",
@@ -264,9 +253,9 @@ function SplitAssessmentDiagram() {
 
       {/* Output */}
       <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-        <div style={{ flex: 1, height: 1, background: "rgba(0,0,0,0.06)" }} />
-        {box("Board-ready Recommendation", "#10B981", { fontSize: 10, padding: "4px 10px" })}
-        <div style={{ flex: 1, height: 1, background: "rgba(0,0,0,0.06)" }} />
+        <div style={{ flex: 1, height: 1, background: "rgba(0,0,0,0.08)" }} />
+        {box("Board-ready Recommendation", "#059669", { fontSize: 10, padding: "4px 10px" })}
+        <div style={{ flex: 1, height: 1, background: "rgba(0,0,0,0.08)" }} />
       </div>
     </div>
   );

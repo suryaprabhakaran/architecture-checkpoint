@@ -73,7 +73,6 @@ export const USE_CASES: UseCase[] = [
       "Single entry point across four documentation standards and multiple business units. Documentation drift eliminated by design. Zero maintenance overhead — hosted on GitHub Pages.",
     tags: ["Developer Portal", "Swagger", "AsyncAPI", "Doxygen", "GitHub Pages", "Python"],
     diagramType: "portal-routing",
-    imageUrl: "/diagrams/diagram-portal-routing.png",
   },
   {
     id: "uc-2",
@@ -88,7 +87,6 @@ export const USE_CASES: UseCase[] = [
       "Board-ready report accepted as credible by both parties. Homegrown platform's measurable advantages surfaced objectively. Consolidation programme launched with full organisational alignment.",
     tags: ["M&A", "Strategic Assessment", "Platform Evaluation", "Streaming", "Chinese Wall"],
     diagramType: "split-assessment",
-    imageUrl: "/diagrams/diagram-split-assessment.png",
   },
   {
     id: "uc-3",
